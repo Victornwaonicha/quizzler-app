@@ -3,7 +3,8 @@ import requests
 URL = "https://opentdb.com/api.php"
 params = {
     "amount": 10,
-    "type": "boolean"
+    "type": "boolean",
+    "category": 18
 }
 def get_questions():
     response = requests.get(url=URL, params=params)
